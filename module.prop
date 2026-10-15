@@ -1,6 +1,6 @@
-id=ims_hidl_fix
-name=IMS HIDL 继承修复 (OS3 ims.apk + 配套 so -> OS4 包)
-version=v1.1
-versionCode=2
+id=mi10sfix
+name=MI10s 通信与屏幕掉帧修复
+version=2.0
+versionCode=200
 author=Yxlan-yu
-description=用 OS3(A16) 双模 IMS 客户端(含 HIDL 回退)替换 OS4(A17) 纯 AIDL 版 org.codeaurora.ims, 并一并替换其配套 libimsmedia_jni/lib-imsvt* so(v1.0 只换 apk 导致 JNI_OnLoad 崩溃循环), 连上 thyme 原厂 vendor.qti.hardware.radio.ims@1.7 HIDL HAL, 修复无法通话/收发短信.
+description=针对小米10s(thyme) HyperOS4 4.0.15.0 移植包的修复: [1]无法通话/收发短信——换回含 HIDL 回退的 IMS 客户端并接回原厂 HIDL@1.7 HAL; [2]屏幕滑动和看视频时掉帧/抖动。兼容 KernelSU / Magisk。日志: /data/local/tmp/mi10sfix_fps.log 与 fix_log.txt
